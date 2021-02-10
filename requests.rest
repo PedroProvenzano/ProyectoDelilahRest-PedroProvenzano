@@ -1,0 +1,18 @@
+GET http://localhost:3000/
+
+
+
+###
+
+
+POST http://localhost:3000/usuarios/add
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "password": "12345",
+    "fullname": "Pedro Provenzano",
+    "email": "pedroprov0@gmail.com",
+    "celphone": 51532434,
+    "sendDir": "Blabla 2000"
+}

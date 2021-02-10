@@ -1,3 +1,4 @@
+require("./connection");
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
@@ -9,6 +10,12 @@ const Menu = require("./routes/menu");
 const Pedidos = require("./routes/pedidos");
 const Usuarios = require("./routes/usuarios");
 
+// Syncs
+require("./migrations");
+
+// MiddleWares
+app.use(cors());
+app.use(bodyParser.json());
 app.use("/menu", Menu);
 app.use("/pedidos", Pedidos);
 app.use("/usuarios", Usuarios);
