@@ -11,6 +11,7 @@ const Pedidos = require("./routes/pedidos");
 const Usuarios = require("./routes/usuarios");
 
 // Syncs
+require("./asociations");
 require("./migrations");
 
 // MiddleWares
