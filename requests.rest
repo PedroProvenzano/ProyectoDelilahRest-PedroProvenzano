@@ -99,3 +99,14 @@ Content-Type: application/json
     "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA4OTc5NywiZXhwIjoxNjEzMDkzMzk3fQ.I9ZjL2_Fs8yCmdezzoOLDk9APVsG58M0vFy-7e-gl6c",
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA4NTI1OH0.ZjVAOlAYWhY5b9qSfl-j52LtpAZhy8_ElKHCx5ryQ9U"
 }
+
+###
+
+GET http://localhost:3000/usuarios/logout
+Content-Type: application/json
+
+{
+  "username": "Mrklus",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA5OTY2NywiZXhwIjoxNjEzMTAzMjY3fQ.V_L3gnNBS-RVoZvb55LCJ-3z3ZQwkx6Z8Whi8bw0Ia8",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA5OTY2N30.2wC1BACYzjLgZB4vl36PTJe9_1pf-p-nfybpQn6yMwg"
+}
