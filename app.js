@@ -9,6 +9,8 @@ const cors = require("cors");
 const Menu = require("./routes/menu");
 const Pedidos = require("./routes/pedidos");
 const Usuarios = require("./routes/usuarios");
+const TokenRefresh = require("./routes/tokenrefresh");
+const Admin = require("./routes/admin");
 
 // Syncs
 require("./asociations");
@@ -20,6 +22,8 @@ app.use(bodyParser.json());
 app.use("/menu", Menu);
 app.use("/pedidos", Pedidos);
 app.use("/usuarios", Usuarios);
+app.use("/token", TokenRefresh);
+app.use("/admin", Admin);
 
 app.get("/", async (req, res) => {
   res.send("hola desde app");

@@ -22,8 +22,8 @@ Usuario.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    celphone: {
-      type: DataTypes.INTEGER,
+    phone: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
     sendDir: {

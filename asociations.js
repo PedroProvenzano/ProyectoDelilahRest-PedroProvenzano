@@ -10,7 +10,8 @@ Pedido.belongsToMany(Plato, { through: "PedidoPlatos" });
 Plato.belongsToMany(Pedido, { through: "PedidoPlatos" });
 
 // Usuario y Token
-Usuario.hasOne(Token, { as: "UserToken", constraints: false });
+Usuario.hasMany(Token);
+// user.addToken()
 
 // Usuario y Pedido
 Usuario.hasMany(Pedido, { as: "encargos" });

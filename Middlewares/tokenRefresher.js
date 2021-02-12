@@ -1,7 +1,10 @@
-async function tokenRefresher(req, res, next) {
-  // Refresh del token
+require("dotenv/config");
+const jwt = require("jsonwebtoken");
 
-  next();
+async function tokenRefresher(username) {
+  return await jwt.sign(username, process.env.ACCESS_TOKEN_REFRESH, {
+    expiresIn: "1h",
+  });
 }
 
 module.exports = tokenRefresher;
