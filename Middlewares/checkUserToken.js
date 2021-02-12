@@ -1,7 +1,6 @@
 const Usuario = require("../models/Usuario");
 const jwt = require("jsonwebtoken");
 const Token = require("../models/Token");
-const getNewToken = require("./getNewToken");
 async function checkUserToken(req, res, next) {
   // Check si el token es correcto
   try {

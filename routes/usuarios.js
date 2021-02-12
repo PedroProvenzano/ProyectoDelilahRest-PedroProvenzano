@@ -16,6 +16,9 @@ router.use("/edit", checkUserToken, UsuariosEdit);
 //    Login
 const UsuariosLogin = require("../Usuarios/login");
 router.use("/login", UsuariosLogin);
+//    Logout
+const UsuariosLogout = require("../Usuarios/logout");
+router.use("/logout", UsuariosLogout);
 //    Lista
 const UsuariosLista = require("../Usuarios/lista");
 router.use("/", checkUserToken, checkAdmin, UsuariosLista);
