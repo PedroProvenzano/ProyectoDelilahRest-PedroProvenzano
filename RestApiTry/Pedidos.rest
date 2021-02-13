@@ -1,0 +1,55 @@
+POST http://localhost:3000/pedidos/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE5ODcxMiwiZXhwIjoxNjEzMjAyMzEyfQ.J2Q_EDLnYIbqPqWMRYE8_4G5KV0HOkxGmqpE5XtaBSM
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "platos": ["Milanesa", "Fideos"],
+    "payMethod": "Efectivo"
+}
+
+
+###
+
+PUT http://localhost:3000/pedidos/edit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE3MzE1OCwiZXhwIjoxNjEzMTc2NzU4fQ.fzWfXn2UDBLxpkGyAbPMacMAmiBqlhVbvD_KvPAE8V8
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "orderID": 2,
+    "orderState": "CONFIRMADO"
+}
+
+###
+
+DELETE http://localhost:3000/pedidos/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE3MzE1OCwiZXhwIjoxNjEzMTc2NzU4fQ.fzWfXn2UDBLxpkGyAbPMacMAmiBqlhVbvD_KvPAE8V8
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "DeleteID": 2
+}
+
+
+###
+
+GET http://localhost:3000/pedidos/state/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE5OTE1OSwiZXhwIjoxNjEzMjAyNzU5fQ.WlaX7PldY9xPCBBGJh6gZFqa5PGhvTZZnv-oyrVQy90
+Content-Type: application/json
+
+{
+    "username": "Mrklus"
+}
+
+
+###
+
+GET http://localhost:3000/pedidos/admin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE5OTE1OSwiZXhwIjoxNjEzMjAyNzU5fQ.WlaX7PldY9xPCBBGJh6gZFqa5PGhvTZZnv-oyrVQy90
+Content-Type: application/json
+
+{
+    "username": "Mrklus"
+}

@@ -8,6 +8,7 @@ GET http://localhost:3000/
 POST http://localhost:3000/usuarios/add
 Content-Type: application/json
 
+
 {
     "username": "Catalejo",
     "password": "123pee",
@@ -30,6 +31,7 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/usuarios/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MDEyMSwiZXhwIjoxNjEzMTYzNzIxfQ.5CIBqQ4Rgbl-SZWCBxJzSzTvmUvrJcB573QMWLnJF6E
 Content-Type: application/json
 
 {
@@ -41,13 +43,13 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/usuarios/edit
+PUT http://localhost:3000/usuarios/edit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MDEyMSwiZXhwIjoxNjEzMTYzNzIxfQ.5CIBqQ4Rgbl-SZWCBxJzSzTvmUvrJcB573QMWLnJF6E
 Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFieXNzSG93bCIsImlhdCI6MTYxMzA3OTk3Nn0.x38MlI8B8RVatEW2j-BwJnmhG6N5vblrfM8dAqdqG8I",
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFieXNzSG93bCIsImlhdCI6MTYxMzA4MTA0NCwiZXhwIjoxNjEzMDgxMDU5fQ.WUrzN-w7Ite8anO1kT2Y6Xqsm9P1nxoIacQkFTJidsA"
+    "fullname": "Pedro Esteban Provenzano"    
 }
 
 ###
@@ -57,7 +59,7 @@ Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA4NTI1OH0.ZjVAOlAYWhY5b9qSfl-j52LtpAZhy8_ElKHCx5ryQ9U"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE3MTE2Mn0.1Q91UpL9Il4baRTU-1xm_-Ph5ruMF5pLIreaHL1ArJc"
 }
 
 ###
@@ -103,10 +105,9 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/usuarios/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MjczMn0.sr1k1rupHQ4QiCQ5lVTtp5Vgq5sn7EiMNRAdK439dPI
 Content-Type: application/json
 
 {
-  "username": "Mrklus",
-  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA5OTY2NywiZXhwIjoxNjEzMTAzMjY3fQ.V_L3gnNBS-RVoZvb55LCJ-3z3ZQwkx6Z8Whi8bw0Ia8",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA5OTY2N30.2wC1BACYzjLgZB4vl36PTJe9_1pf-p-nfybpQn6yMwg"
+  "username": "Mrklus"
 }

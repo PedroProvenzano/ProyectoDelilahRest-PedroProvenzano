@@ -1,0 +1,44 @@
+POST http://localhost:3000/menu/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE5OTE1OSwiZXhwIjoxNjEzMjAyNzU5fQ.WlaX7PldY9xPCBBGJh6gZFqa5PGhvTZZnv-oyrVQy90
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "mealName": "Fideos",
+    "price": 150
+}
+
+###
+
+DELETE  http://localhost:3000/menu/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2NDkxNywiZXhwIjoxNjEzMTY4NTE3fQ.SrytZAHZqI9SJAW29m3SB7ZcqfDHXb6rfNTM8mbikX4
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "mealDelete": "Milanesa con papas"
+}
+
+
+###
+
+GET  http://localhost:3000/menu/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2NDkxNywiZXhwIjoxNjEzMTY4NTE3fQ.SrytZAHZqI9SJAW29m3SB7ZcqfDHXb6rfNTM8mbikX4
+Content-Type: application/json
+
+{
+    "username": "Mrklus"
+}
+
+
+###
+
+PUT  http://localhost:3000/menu/edit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2NDkxNywiZXhwIjoxNjEzMTY4NTE3fQ.SrytZAHZqI9SJAW29m3SB7ZcqfDHXb6rfNTM8mbikX4
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "mealName": "Fideos con bolognesa",
+    "price": 300
+}

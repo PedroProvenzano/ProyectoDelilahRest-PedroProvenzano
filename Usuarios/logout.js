@@ -1,22 +1,19 @@
 const express = require("express");
 const router = express.Router();
-const Usuario = require("../models/Usuario");
 const Token = require("../models/Token");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const tokenRefresher = require("../Middlewares/tokenRefresher");
 
 router.get("/", async (req, res) => {
   try {
-    if (!req.body.token) {
-      return res.status(400).send("Falta Token (token)");
-    }
-    const token = await Token.findOne({ where: { token: req.body.token } });
-    if (token) {
-      token.destroy();
+    const headerBearer = req.headers["authorization"];
+    const tokenB = headerBearer && headerBearer.split(" ")[1];
+    console.log(tokenB);
+    if (tokenB == null) return res.sendStatus(400);
+    const tokenDB = await Token.findOne({ where: { token: tokenB } });
+    if (tokenDB) {
+      tokenDB.destroy();
       return res.status(200).send("Logout Exitoso");
     } else {
-      console.log(token);
+      console.log(tokenDB);
       return res.send("Error");
     }
   } catch (err) {

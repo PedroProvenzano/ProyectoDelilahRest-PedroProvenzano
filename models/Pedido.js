@@ -16,9 +16,10 @@ Pedido.init(
     },
     orderState: {
       type: DataTypes.STRING,
-      allowNull: false,
+      defaultValue: "Nuevo",
+      allowNull: true,
     },
-    user_id: {
+    price: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
