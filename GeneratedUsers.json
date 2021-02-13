@@ -1,0 +1,85 @@
+{
+	"password": "password",
+	"arrayUsuarios": [
+  {
+    "username": "collier.rodger",
+    "password": "d88ea35ae29948ff13509b0023a6a01a84faf538",
+    "fullname": "Miss Rosanna O'Connell DDS",
+    "email": "haley.gregory@example.org",
+    "phone": "(551)381-0997",
+    "sendDir": "198 Serenity Keys"
+  },
+  {
+    "username": "beier.elvie",
+    "password": "66fe6e47cdeae84460197035136d9c8ff1f415b0",
+    "fullname": "Miss Eloisa Hayes",
+    "email": "genevieve55@example.net",
+    "phone": "744.109.0396x74955",
+    "sendDir": "79943 Treutel Freeway Suite 491"
+  },
+  {
+    "username": "frederic.schmidt",
+    "password": "da61ea60d811a333bf66f0dfeb5f3af5450948e3",
+    "fullname": "Dr. Jules Carroll",
+    "email": "balistreri.eldora@example.com",
+    "phone": "(484)979-8726x4348",
+    "sendDir": "57498 Hackett Row"
+  },
+  {
+    "username": "parker.von",
+    "password": "4d4984c4ea91f68ad237ce9944fad9cb13b9aa85",
+    "fullname": "Frida Feeney Sr.",
+    "email": "hane.lindsay@example.org",
+    "phone": "781-628-1213",
+    "sendDir": "1348 Murray Mall Suite 310"
+  },
+  {
+    "username": "dankunding",
+    "password": "6255e913d0b16bb3ff639f2a0ad0098778605d0c",
+    "fullname": "Dee Gleichner V",
+    "email": "katarina.smitham@example.com",
+    "phone": "(475)763-0630x539",
+    "sendDir": "7793 Wunsch Parks"
+  },
+  {
+    "username": "tobin.bailey",
+    "password": "0a7e083a2e58413eccd02fe086a23f63e0d3cd26",
+    "fullname": "Gillian Hermiston IV",
+    "email": "cummerata.kylie@example.com",
+    "phone": "(161)816-4808x8419",
+    "sendDir": "7713 Schmitt Spur"
+  },
+  {
+    "username": "nadia.mckenzie",
+    "password": "144717b3d81faf330f061c8e0fed8b31c947fcda",
+    "fullname": "Prof. Kevin Hirthe",
+    "email": "dgottlieb@example.net",
+    "phone": "1-211-307-4811",
+    "sendDir": "49880 Rolfson Mountain"
+  },
+  {
+    "username": "conn.effie",
+    "password": "4a3f7f419f2d9e09aa52bc078d29bc1e1d49bec6",
+    "fullname": "Arnaldo Eichmann",
+    "email": "larry33@example.org",
+    "phone": "1-808-993-0954x4476",
+    "sendDir": "80366 Wintheiser Greens Suite 003"
+  },
+  {
+    "username": "spencer.alfreda",
+    "password": "c3d1b6dd08a8e5e09afb73b56c1401d594a3adf7",
+    "fullname": "Mr. Lane Hansen V",
+    "email": "quinton.o'connell@example.com",
+    "phone": "+59(6)6673539555",
+    "sendDir": "121 Emma Knolls Apt. 387"
+  },
+  {
+    "username": "roslyn.schoen",
+    "password": "4c5727e3b32552e53b9070235386a2c769f88749",
+    "fullname": "Miss Valentine Johns",
+    "email": "mhintz@example.org",
+    "phone": "1-201-521-6489",
+    "sendDir": "66230 Ted Throughway Apt. 656"
+  }
+]
+}

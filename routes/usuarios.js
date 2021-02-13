@@ -19,6 +19,9 @@ router.use("/login", UsuariosLogin);
 //    Logout
 const UsuariosLogout = require("../Usuarios/logout");
 router.use("/logout", UsuariosLogout);
+// Creacion Masiva
+const BulkCreate = require("../Usuarios/bulkCreateUsuarios");
+router.use("/masive", BulkCreate);
 //    Lista
 const UsuariosLista = require("../Usuarios/lista");
 router.use("/", checkUserToken, checkAdmin, UsuariosLista);

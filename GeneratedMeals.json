@@ -1,0 +1,85 @@
+{
+	"password": "password",
+	"arrayPlatos": [
+  {
+    "mealName": "Fideos",
+    "price": "1520.00"
+  },
+  {
+    "mealName": "Milanesa napolitana",
+    "price": "225.00"
+  },
+  {
+    "mealName": "Tarta de jamon y queso",
+    "price": "559.00"
+  },
+  {
+    "mealName": "Tarta de roquefort",
+    "price": "563.00"
+  },
+  {
+    "mealName": "Tarta de humita",
+    "price": "1787.00"
+  },
+  {
+    "mealName": "Tarta de verdura",
+    "price": "1745.00"
+  },
+  {
+    "mealName": "Empanada de carne",
+    "price": "1706.00"
+  },
+  {
+    "mealName": "Empanada de humita",
+    "price": "929.00"
+  },
+  {
+    "mealName": "Empanada de verdura",
+    "price": "621.00"
+  },
+  {
+    "mealName": "Empanada de jamon y queso",
+    "price": "592.00"
+  },
+  {
+    "mealName": "Empanada de cebolla y queso",
+    "price": "1633.00"
+  },
+  {
+    "mealName": "Ravioles",
+    "price": "918.00"
+  },
+  {
+    "mealName": "Mousse de chocolate",
+    "price": "1887.00"
+  },
+  {
+    "mealName": "Panqueques",
+    "price": "1719.00"
+  },
+  {
+    "mealName": "Torta de manzana",
+    "price": "1251.00"
+  },
+  {
+    "mealName": "Budin",
+    "price": "1094.00"
+  },
+  {
+    "mealName": "Budin marmolado",
+    "price": "439.00"
+  },
+  {
+    "mealName": "Dona",
+    "price": "142.00"
+  },
+  {
+    "mealName": "Baguel",
+    "price": "1772.00"
+  },
+  {
+    "mealName": "Sushi",
+    "price": "1656.00"
+  }
+]
+}

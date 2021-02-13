@@ -15,17 +15,19 @@ router.post("/", async (req, res) => {
   for (let i of plato) {
     totalPrice += i.dataValues.price;
   }
+  console.log(plato);
   const pedido = await Pedido.create({
     payMethod: req.body.payMethod,
     price: totalPrice,
   });
   await pedido.addPlatos(plato);
   await user.addPedido(pedido);
-  await pedido.addUsuario(user);
+  // await pedido.addUsuario(user);
 
   let message = {
     msg: "Pedido tomado",
     pedido: pedido,
+    plato: plato,
   };
 
   return res.status(200).json(message);

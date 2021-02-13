@@ -10,7 +10,7 @@ Content-Type: application/json
 
 
 {
-    "username": "Catalejo",
+    "username": "Pedro",
     "password": "123pee",
     "fullname": "Pedro Provenzano",
     "email": "pedroprov0@gmail.com",
@@ -106,6 +106,16 @@ Content-Type: application/json
 
 GET http://localhost:3000/usuarios/logout
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MjczMn0.sr1k1rupHQ4QiCQ5lVTtp5Vgq5sn7EiMNRAdK439dPI
+Content-Type: application/json
+
+{
+  "username": "Mrklus"
+}
+
+###
+
+POST http://localhost:3000/usuarios/masive
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI0ODY3NSwiZXhwIjoxNjEzMjYzMDc1fQ.lB7lOCY8ZyLPvUcPQqkcBmAd5mbJxRrtK7mEdZwBtnM
 Content-Type: application/json
 
 {

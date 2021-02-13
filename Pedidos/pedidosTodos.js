@@ -10,15 +10,28 @@ router.get("/", async (req, res) => {
       attributes: { exclude: ["updatedAt"] },
       include: [
         {
+          model: Plato,
+          attributes: {
+            exclude: ["meal_id", "updatedAt", "createdAt"],
+          },
+        },
+        {
           model: Usuario,
-          attributes: { exclude: ["user_id", "password", "isAdmin"] },
-          through: { attributes: [] },
+          attributes: {
+            exclude: [
+              "user_id",
+              "password",
+              "isAdmin",
+              "updatedAt",
+              "createdAt",
+            ],
+          },
         },
       ],
-      through: { attributes: [] },
     });
     return res.status(200).json(pedidos);
   } catch (err) {
+    console.log(err);
     return res.status(404).json(err);
   }
 });

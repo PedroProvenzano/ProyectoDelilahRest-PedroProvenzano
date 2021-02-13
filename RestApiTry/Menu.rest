@@ -1,11 +1,11 @@
 POST http://localhost:3000/menu/add
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE5OTE1OSwiZXhwIjoxNjEzMjAyNzU5fQ.WlaX7PldY9xPCBBGJh6gZFqa5PGhvTZZnv-oyrVQy90
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI0NDY0MiwiZXhwIjoxNjEzMjU5MDQyfQ.EuLM8IxRv5AioHiZ0AClQnQebXuyeFAtypP4VpXJe24
 Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "mealName": "Fideos",
-    "price": 150
+    "mealName": "Tarta",
+    "price": 250
 }
 
 ###
