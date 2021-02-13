@@ -4,7 +4,8 @@
   "description": "Proyecto para acamica",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "generatecode": "node generate-token.js"
   },
   "repository": {
     "type": "git",
