@@ -59,9 +59,49 @@ en la consola.
 
 - La api va a crear las tablas automaticamente en la base de datos.
 
+### PASO IMPORTANTE
+
+- Vamos a crearnos un usuario administrador, para esto hay que hacer un POST al siguiente endpoint 
+```
+/admin
+```
+Con el siguiente body (rellenar con los datos que corresponden)
+```json
+{
+    "username": "UsuarioAdmin",
+    "password": "PassDelAdmin",
+    "fullname": "NombreDelAdmin",
+    "email": "emailDelAdmin0@gmail.com",
+    "phone": "15343224",
+    "sendDir": "DireccionDelAdmin", 
+    "adminpass": "PasswordEstablecidaEn.env"
+}
+```
+
+- Una vez creado, vamos a poder seguir con el cuarto paso. Pero antes una aclaracion:
+El sistema de login te provee de 2 Tokens, la RefreshToken y la Token.
+
+La refresh token se usa en el header como metodo de identificacion, este token tiene un tiempo de expiracion de 4 horas. una vez expirado hay que pedir otro al endpoint 
+```
+/token
+```
+con el siguiente body (ejemplo):
+```json
+{
+    "username": "Mrklus",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE3MTE2Mn0.1Q91UpL9Il4baRTU-1xm_-Ph5ruMF5pLIreaHL1ArJc"
+}
+```
+En este caso el token utilizado para pedir un nuevo RefreshToken es Token.
+
+
+---
+
 ### Cuarto Paso opcional
 
-- Si necesitas cargar datos extra a las tablas de Usuarios y Platos para hacer pruebas en la base de datos hay dos archivos nombrados "GeneratedMeals.json" y "GeneratedUsers.json" que se pueden utilizar para enviar a traves de postman o cualquier metodo de envio POST, a el endpoint
+- Si necesitas cargar datos extra a las tablas de Usuarios y Platos para hacer pruebas en la base de datos hay dos archivos nombrados "GeneratedMeals.json" y "GeneratedUsers.json" que se pueden utilizar para enviar a traves de postman o cualquier metodo de envio POST, al endpoint
+
+
 
 - Caso Platos
 
