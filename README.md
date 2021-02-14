@@ -111,20 +111,20 @@ Contenido del archivo "GeneratedUsers.json"
 - Para que esto funcione, en el archivo GeneratedUsers hay que cambiar la variable password por la ADMIN_PASS que hay en el archivo .env
 ```
 
-## ENDPOINTS
+# ENDPOINTS
 
 ```
 URL (en caso que la base de datos este instalada de forma local) = http://localhost:3000/  (3000 es el puerto donde se inicia la api, reemplazar por el puerto que uses)
 ```
 
-### Usuarios
+## Usuarios
 
 ```diff
 + /usuarios
 + - Content-Type: application/json
 ```
 
-#### Registrar usuario
+### Registrar usuario
 
 ```diff
 + Method: POST
@@ -153,7 +153,7 @@ Respuesta ejemplo (201)
 }
 ```
 
-#### Login de usuario
+### Login de usuario
 
 ```diff
 + Method: GET
@@ -186,7 +186,7 @@ Respuesta ejemplo (200)
 
 (La refresh token se usa en el header para tener permisos como usuario logeado (esta token expira y es necesario hacer un request especial para conseguir una nueva con la otra token))
 
-#### Logout de usuario
+### Logout de usuario
 
 ```diff
 - NECESITA TOKEN
@@ -237,7 +237,7 @@ Respuesta ejemplo (201)
 "Usuario actualizado"
 ```
 
-#### Borrar usuario
+### Borrar usuario
 
 ```diff
 - SOLO ADMIN
@@ -261,7 +261,7 @@ Respuesta ejemplo (201)
 "Usuario Pedro eliminado"
 ```
 
-#### Lista de usuarios
+### Lista de usuarios
 
 ```diff
 - SOLO ADMIN
@@ -299,14 +299,14 @@ Respuesta ejemplo (201)
 ]
 ```
 
-### Platos
+## Platos
 
 ```diff
 + /menu
 + - Content-Type: application/json
 ```
 
-#### Agregar Plato
+### Agregar Plato
 
 ```diff
 - SOLO ADMIN
@@ -334,7 +334,7 @@ Respuesta ejemplo (201)
 }
 ```
 
-#### Editar Plato
+### Editar Plato
 
 ```diff
 - SOLO ADMIN
@@ -361,7 +361,7 @@ Respuesta ejemplo (201)
 }
 ```
 
-#### Eliminar Plato
+### Eliminar Plato
 
 ```diff
 - SOLO ADMIN
@@ -387,7 +387,7 @@ Respuesta ejemplo (201)
 }
 ```
 
-#### Menu completo
+### Menu completo
 
 ```diff
 - NECESITA REFRESHTOKEN
@@ -422,14 +422,14 @@ Respuesta ejemplo (201)
 ]
 ```
 
-### Pedidos
+## Pedidos
 
 ```diff
 + /pedidos
 + - Content-Type: application/json
 ```
 
-#### Agregar Pedido
+### Agregar Pedido
 
 ```diff
 - NECESITA REFRESHTOKEN
@@ -485,7 +485,7 @@ Respuesta ejemplo (200)
 }
 ```
 
-#### Editar Pedido
+### Editar Pedido
 
 ```diff
 - SOLO ADMIN
@@ -510,7 +510,7 @@ Respuesta ejemplo (201)
 "Pedido actualizado a CONFIRMADO"
 ```
 
-#### Eliminar Pedido
+### Eliminar Pedido
 
 ```diff
 - SOLO ADMIN
@@ -534,7 +534,7 @@ Respuesta ejemplo (201)
 "Pedido con ID 7 eliminado"
 ```
 
-#### Estado Pedido
+### Estado Pedido
 
 ```diff
 - NECESITA REFRESHTOKEN
@@ -592,7 +592,7 @@ Respuesta ejemplo (200)
 }
 ```
 
-#### Pedidos de un usuario en particular
+### Pedidos de un usuario en particular
 
 ```diff
 - SOLO ADMIN
@@ -656,7 +656,7 @@ Respuesta ejemplo (201)
 }
 ```
 
-#### Ver todos los pedidos
+### Ver todos los pedidos
 
 ```diff
 - SOLO ADMIN
