@@ -86,7 +86,7 @@ Contenido del archivo "GeneratedMeals.json"
 ```diff
 - Para que esto funcione, en el archivo GeneratedMeals hay que cambiar la variable password por la ADMIN_PASS que hay en el archivo .env
 ```
-
+---
 - Caso Usuarios
 
 ```diff
@@ -116,14 +116,14 @@ Contenido del archivo "GeneratedUsers.json"
 ```
 URL (en caso que la base de datos este instalada de forma local) = http://localhost:3000/  (3000 es el puerto donde se inicia la api, reemplazar por el puerto que uses)
 ```
-
+---
 ## Usuarios
 
 ```diff
 + /usuarios
 + - Content-Type: application/json
 ```
-
+---
 ### Registrar usuario
 
 ```diff
@@ -152,7 +152,7 @@ Respuesta ejemplo (201)
   "fullname": "Pedro Provenzano"
 }
 ```
-
+---
 ### Login de usuario
 
 ```diff
@@ -185,7 +185,7 @@ Respuesta ejemplo (200)
 ```
 
 (La refresh token se usa en el header para tener permisos como usuario logeado (esta token expira y es necesario hacer un request especial para conseguir una nueva con la otra token))
-
+---
 ### Logout de usuario
 
 ```diff
@@ -209,8 +209,8 @@ Respuesta ejemplo (200)
 ```json
 "Logout Exitoso"
 ```
-
-#### Edit de usuario
+---
+### Edit de usuario
 
 ```diff
 - SOLO ADMIN
@@ -236,7 +236,7 @@ Respuesta ejemplo (201)
 ```json
 "Usuario actualizado"
 ```
-
+---
 ### Borrar usuario
 
 ```diff
@@ -260,7 +260,7 @@ Respuesta ejemplo (201)
 ```json
 "Usuario Pedro eliminado"
 ```
-
+---
 ### Lista de usuarios
 
 ```diff
@@ -298,14 +298,14 @@ Respuesta ejemplo (201)
   }
 ]
 ```
-
+---
 ## Platos
 
 ```diff
 + /menu
 + - Content-Type: application/json
 ```
-
+---
 ### Agregar Plato
 
 ```diff
@@ -333,7 +333,7 @@ Respuesta ejemplo (201)
   "price": 250
 }
 ```
-
+---
 ### Editar Plato
 
 ```diff
@@ -360,7 +360,7 @@ Respuesta ejemplo (201)
     "Plato actualizado"
 }
 ```
-
+---
 ### Eliminar Plato
 
 ```diff
@@ -386,7 +386,7 @@ Respuesta ejemplo (201)
     "Plato Milanesa con papas eliminado"
 }
 ```
-
+---
 ### Menu completo
 
 ```diff
@@ -421,14 +421,14 @@ Respuesta ejemplo (201)
   }
 ]
 ```
-
+---
 ## Pedidos
 
 ```diff
 + /pedidos
 + - Content-Type: application/json
 ```
-
+---
 ### Agregar Pedido
 
 ```diff
@@ -484,7 +484,7 @@ Respuesta ejemplo (200)
   ]
 }
 ```
-
+---
 ### Editar Pedido
 
 ```diff
@@ -509,7 +509,7 @@ Respuesta ejemplo (201)
 ```json
 "Pedido actualizado a CONFIRMADO"
 ```
-
+---
 ### Eliminar Pedido
 
 ```diff
@@ -533,7 +533,7 @@ Respuesta ejemplo (201)
 ```json
 "Pedido con ID 7 eliminado"
 ```
-
+---
 ### Estado Pedido
 
 ```diff
@@ -591,7 +591,7 @@ Respuesta ejemplo (200)
   ]
 }
 ```
-
+---
 ### Pedidos de un usuario en particular
 
 ```diff
@@ -655,7 +655,7 @@ Respuesta ejemplo (201)
   ]
 }
 ```
-
+---
 ### Ver todos los pedidos
 
 ```diff
