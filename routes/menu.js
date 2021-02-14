@@ -18,7 +18,7 @@ router.use("/delete", checkUserToken, checkAdmin, EliminarPlato);
 const EditarPlato = require("../Menu/editarPlato");
 router.use("/edit", checkUserToken, checkAdmin, EditarPlato);
 // Crear pedidos de forma masiva
-const BulkPlatos = require("../Pedidos/bulkCreatePlatos");
+const BulkPlatos = require("../Menu/bulkCreatePlatos");
 router.use("/masive", BulkPlatos);
 
 module.exports = router;

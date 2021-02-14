@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
       return res.status(200).send("Logout Exitoso");
     } else {
       console.log(tokenDB);
-      return res.send("Error");
+      return res.status(404).send("Error");
     }
   } catch (err) {
     res.send(err);

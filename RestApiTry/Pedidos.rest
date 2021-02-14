@@ -1,5 +1,5 @@
 POST http://localhost:3000/pedidos/add
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI0NDY0MiwiZXhwIjoxNjEzMjU5MDQyfQ.EuLM8IxRv5AioHiZ0AClQnQebXuyeFAtypP4VpXJe24
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI2MTgwMCwiZXhwIjoxNjEzMjc2MjAwfQ.D40nZecC-wDfsTdTio8muxXgh89GLcsp0FbTWGtnq-g
 Content-Type: application/json
 
 {
@@ -12,42 +12,54 @@ Content-Type: application/json
 ###
 
 PUT http://localhost:3000/pedidos/edit
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE3MzE1OCwiZXhwIjoxNjEzMTc2NzU4fQ.fzWfXn2UDBLxpkGyAbPMacMAmiBqlhVbvD_KvPAE8V8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI2MTgwMCwiZXhwIjoxNjEzMjc2MjAwfQ.D40nZecC-wDfsTdTio8muxXgh89GLcsp0FbTWGtnq-g
 Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "orderID": 2,
+    "orderID": 7,
     "orderState": "CONFIRMADO"
 }
 
 ###
 
 DELETE http://localhost:3000/pedidos/delete
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE3MzE1OCwiZXhwIjoxNjEzMTc2NzU4fQ.fzWfXn2UDBLxpkGyAbPMacMAmiBqlhVbvD_KvPAE8V8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI2MTgwMCwiZXhwIjoxNjEzMjc2MjAwfQ.D40nZecC-wDfsTdTio8muxXgh89GLcsp0FbTWGtnq-g
 Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "DeleteID": 2
+    "DeleteID": 7
 }
 
 
 ###
 
 GET http://localhost:3000/pedidos/state/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzIzOTE4MywiZXhwIjoxNjEzMjUzNTgzfQ.k5WLw_rQYbTezPjBOqcauAJO05ffndPuD5Qhj7sYnoU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI2MTgwMCwiZXhwIjoxNjEzMjc2MjAwfQ.D40nZecC-wDfsTdTio8muxXgh89GLcsp0FbTWGtnq-g
 Content-Type: application/json
 
 {
-    "username": "Mrklus"
+    "username": "Mrklus",
+    "orderID": 1
+}
+
+###
+
+GET http://localhost:3000/pedidos/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI2MTgwMCwiZXhwIjoxNjEzMjc2MjAwfQ.D40nZecC-wDfsTdTio8muxXgh89GLcsp0FbTWGtnq-g
+Content-Type: application/json
+
+{
+    "username": "Mrklus",
+    "usernameOrders": "Mrklus"
 }
 
 
 ###
 
 GET http://localhost:3000/pedidos/admin
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzIzOTE4MywiZXhwIjoxNjEzMjUzNTgzfQ.k5WLw_rQYbTezPjBOqcauAJO05ffndPuD5Qhj7sYnoU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI2MTgwMCwiZXhwIjoxNjEzMjc2MjAwfQ.D40nZecC-wDfsTdTio8muxXgh89GLcsp0FbTWGtnq-g
 Content-Type: application/json
 
 {

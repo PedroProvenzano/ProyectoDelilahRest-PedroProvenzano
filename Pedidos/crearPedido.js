@@ -11,11 +11,13 @@ router.post("/", async (req, res) => {
 
   let arrayPlatos = req.body.platos;
   let totalPrice = 0;
-  let plato = await Plato.findAll({ where: { mealName: arrayPlatos } });
+  let plato = await Plato.findAll({
+    where: { mealName: arrayPlatos },
+    attributes: { exclude: ["createdAt", "updatedAt"] },
+  });
   for (let i of plato) {
     totalPrice += i.dataValues.price;
   }
-  console.log(plato);
   const pedido = await Pedido.create({
     payMethod: req.body.payMethod,
     price: totalPrice,

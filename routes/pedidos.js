@@ -11,7 +11,7 @@ const EstadoPedido = require("../Pedidos/estadoPedido");
 router.use("/state", checkUserToken, EstadoPedido);
 //    Pedidos del usuario
 const PedidosDelUsuario = require("../Pedidos/pedidosdelUsuario");
-router.use("/user", checkUserToken, PedidosDelUsuario);
+router.use("/user", checkUserToken, checkAdmin, PedidosDelUsuario);
 //    Pedidos del usuario admin Acepta ?user_id
 const PedidosUsuarioAdmin = require("../Pedidos/pedidosTodos");
 router.use("/admin", checkUserToken, checkAdmin, PedidosUsuarioAdmin);

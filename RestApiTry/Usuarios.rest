@@ -31,25 +31,26 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/usuarios/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MDEyMSwiZXhwIjoxNjEzMTYzNzIxfQ.5CIBqQ4Rgbl-SZWCBxJzSzTvmUvrJcB573QMWLnJF6E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI1OTgxNywiZXhwIjoxNjEzMjc0MjE3fQ.mzRJI-3vb3mLwt5k-Z_TMSsQ8A2wJWHiK6uoc-8XX5Y
 Content-Type: application/json
 
 {
-    "username": "Mrklus",
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA5MTMxNSwiZXhwIjoxNjEzMDk0OTE1fQ.wZqKPNiSVSG8T-isbrGY99nrouTxDfjofetPxt0kkjc",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA5MTMxNX0.Dk-gn0CoCDBmW3LIpLA6XfPciItBRSbUOzR4sdD375c"
+    "username": "Mrklus"
 }
 
 
 ###
 
 PUT http://localhost:3000/usuarios/edit
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MDEyMSwiZXhwIjoxNjEzMTYzNzIxfQ.5CIBqQ4Rgbl-SZWCBxJzSzTvmUvrJcB573QMWLnJF6E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI1Nzg1MSwiZXhwIjoxNjEzMjcyMjUxfQ.c3mc5qAOp5VnuspX5kyXGTXeXea64JetCwupFKWI9Nw
 Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "fullname": "Pedro Esteban Provenzano"    
+    "fullname": "Pedro Esteban Provenzano",
+    "phone": "159382903",
+    "email":"newemail@gmoil.com",
+    "sendDir":"nueva calle falsa 2210"    
 }
 
 ###
@@ -81,12 +82,12 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/usuarios/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI1OTI3MiwiZXhwIjoxNjEzMjczNjcyfQ.3DKmlFG-InMqIXi8fhrJjhVoXZ-Sgss-kFwSbn_vMT0
 Content-Type: application/json
 
 {
     "username": "Mrklus",
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA4NTI1OCwiZXhwIjoxNjEzMDg4ODU4fQ.0oVJQawbgcbxBmVzy7RBwBtAfugJ4opKl_Puus7VY-4",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzA4NTI1OH0.ZjVAOlAYWhY5b9qSfl-j52LtpAZhy8_ElKHCx5ryQ9U"
+    "DeleteUsername": "Pedro"
 }
 
 ###
@@ -105,7 +106,7 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3000/usuarios/logout
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzE2MjczMn0.sr1k1rupHQ4QiCQ5lVTtp5Vgq5sn7EiMNRAdK439dPI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1ya2x1cyIsImlhdCI6MTYxMzI1ODk0M30.4Wd6cvgoPx6PDqhKhSYIbzg2EoiREP2iv7Mc1FuuoH0
 Content-Type: application/json
 
 {

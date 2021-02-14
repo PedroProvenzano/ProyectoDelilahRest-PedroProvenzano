@@ -13,8 +13,20 @@ router.get("/", async (req, res) => {
         include: [
           {
             model: Pedido,
-            include: [{ model: Plato, attributes: ["mealName", "price"] }],
-            attributes: ["orderState", "payMethod", "price", "createdAt"],
+            include: [
+              {
+                model: Plato,
+                attributes: ["mealName", "price"],
+                through: { attributes: [] },
+              },
+            ],
+            attributes: [
+              "order_id",
+              "orderState",
+              "payMethod",
+              "price",
+              "createdAt",
+            ],
           },
         ],
       });

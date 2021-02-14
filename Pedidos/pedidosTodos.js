@@ -14,6 +14,7 @@ router.get("/", async (req, res) => {
           attributes: {
             exclude: ["meal_id", "updatedAt", "createdAt"],
           },
+          through: { attributes: [] },
         },
         {
           model: Usuario,

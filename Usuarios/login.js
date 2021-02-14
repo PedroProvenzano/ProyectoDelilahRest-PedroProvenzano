@@ -28,6 +28,10 @@ router.get("/", async (req, res) => {
       let message = {
         msg: `Login exitoso`,
         username: user.username,
+        sendDir: user.sendDir,
+        phone: user.phone,
+        fullname: user.fullname,
+        email: user.email,
         refreshToken: accessRefreshToken,
         Token: accessToken,
       };
