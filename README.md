@@ -283,7 +283,7 @@ Respuesta ejemplo (201)
 - SOLO ADMIN
 - NECESITA REFRESHTOKEN
 + Method: DELETE
-+ /usuarios/edit
++ /usuarios/delete
 ```
 
 Estructura del body (ejemplo)
